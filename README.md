@@ -25,9 +25,7 @@ El desarrollo debe tener 3 capas y utilizar inyección de dependencias para la c
 ✓ Se tendrá en cuenta el desarrollo basado en buenas prácticas.
  Se adjunta diseño del mínimo viable esperado.
  
- ![Captura de Pantalla 2021-12-22 a la(s) 12 24 18 a  m](https://user-images.githubusercontent.com/35405789/147035342-97b626d2-0d77-4d09-bcdb-a8849036941e.png)
- ![Captura de Pantalla 2021-12-22 a la(s) 12 23 57 a  m](https://user-images.githubusercontent.com/35405789/147035358-938f09fc-167c-4b57-857c-1ff663806391.png)![Captura de Pantalla 2021-12-22 a la(s) 12 23 06 a  m](https://user-images.githubusercontent.com/35405789/147035371-5bd505da-b4c3-42f0-a3f4-286fccfcd6d2.png)
-
+ ![Captura de Pantalla 2021-12-22 a la(s) 12 24 18 a  m](https://user-images.githubusercontent.com/35405789/147035342-97b626d2-0d77-4d09-bcdb-a8849036941e.png)![Captura de Pantalla 2021-12-22 a la(s) 12 23 57 a  m](https://user-images.githubusercontent.com/35405789/147035358-938f09fc-167c-4b57-857c-1ff663806391.png)![Captura de Pantalla 2021-12-22 a la(s) 12 23 06 a  m](https://user-images.githubusercontent.com/35405789/147035371-5bd505da-b4c3-42f0-a3f4-286fccfcd6d2.png)![Captura de Pantalla 2021-12-22 a la(s) 12 26 55 a  m](https://user-images.githubusercontent.com/35405789/147035549-284c07ea-793e-4fd5-aa11-713e3eb939f3.png)
 
  
 
