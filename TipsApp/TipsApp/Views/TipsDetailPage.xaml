@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm ="clr-namespace:TipsApp.ViewModels"
+    Title="Detalle del Tips"
+    x:Class="TipsApp.Views.TipsDetailPage">
+
+    <ContentPage.BindingContext>
+        <vm:TipsDetailViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="20">
+            <Label Text="{Binding Tips.CreationDate,StringFormat= '{0:dd/MM/yyyy}', Mode=TwoWay}" FontSize="Medium"></Label>
+            <Label Text="{Binding Tips.Title, Mode=TwoWay}" FontSize="Medium"></Label>
+            <Label Text="{Binding Tips.Description, Mode=TwoWay}" FontSize="Small"></Label>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Editar" Command="{Binding EditTipsCommand}" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

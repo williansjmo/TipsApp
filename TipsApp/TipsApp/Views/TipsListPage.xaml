@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TipsApp.Views.TipsListPage"
+    xmlns:vm ="clr-namespace:TipsApp.ViewModels"
+    Title="Listado de Tips"
+    xmlns:model="clr-namespace:Tips.Domain.Entities;assembly=Tips.Domain">
+    <!--<ContentPage.BindingContext>
+        <vm:TipsListViewModel/>
+    </ContentPage.BindingContext>-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Crear" Command="{Binding AddTipsCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <RefreshView x:DataType="vm:TipsListViewModel" Command="{Binding LoadTipsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <CollectionView x:Name="TipsListView"
+                ItemsSource="{Binding Items}"
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" x:DataType="model:Tip" Orientation="Horizontal">
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding CreationDate, StringFormat='{0:dd/MM/yyyy}'}" 
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+                                <Label Text="{Binding Title}"
+                                    LineBreakMode="NoWrap" 
+                                    Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                <Button
+                                     
+                            Text ="Ver" 
+                            Command="{Binding Path=BindingContext.DetailTipsCommand, Source={x:Reference TipsListView}}" 
+                            CommandParameter="{Binding .}" />
+                                <Button 
+                            Text ="Borrar" 
+                            Command="{Binding Path=BindingContext.DeleteTipsCommand, Source={x:Reference TipsListView}}" 
+                            CommandParameter="{Binding .}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>
