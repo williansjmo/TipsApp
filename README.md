@@ -6,8 +6,11 @@ Se requiere una aplicación para la creación y administración de tips.
 Criterios de desarrollo
 En el desarrollo realizado debe cumplir las siguientes condiciones y utilizar las siguientes tecnologías:
 El desarrollo debe tener 3 capas y utilizar inyección de dependencias para la comunicación entre las capas.
+
 ✓ PRESENTACIÓN: aquí deben estar los proyectos de Xamarin Forms.
+
 ✓ DOMINIO: Encargada de: Lógica de negocio en C# .
+
 ✓ INFRAESTRUCTURA: encargada de la lógica de acceso a
 datos
 ORM de su elección.
